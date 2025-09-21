@@ -1,0 +1,158 @@
+/* Logo/Image Styling */
+.header-img {
+  display: block;
+  margin: 0px auto 0px auto;  /* Top, horizontal center, bottom spacing */
+   width: 120px !important;
+  height: auto !important;
+  max-width: none !important;  /* Responsive limit */
+}
+
+/* Heading Styling */
+header {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.main-heading {
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #007bff; /* Blue color for emphasis */
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 0;
+}
+
+/* Chat Container */
+.container {
+  max-width: 955px;
+  background-image: url("../images/chat-bg.png.jpg");  /* ✅ Image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  margin: auto;
+  height: 60vh;
+  padding: 33px;
+  overflow-y: auto;
+  display: block;
+  margin-bottom: 23px;
+
+  /* Optional: Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Message Styling */
+.message {
+  background-color: grey;
+  width: 24%;
+  padding: 10px;
+  margin: 17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  clear: both;
+}
+.left {
+  float: right;
+}
+.right {
+  float: left;
+}
+
+/* Input & Button */
+#send-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 985px;
+  width: 100%;
+}
+#messageInp {
+  width: 92%;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+}
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 34px;
+}
+
+/* Utility */
+.user-joined {
+  text-decoration: none;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Chat Box Scroll */
+.chat-box {
+  -ms-overflow-style: none;
+}
+.chat-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 2.2em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .header-img {
+    width: 120px;
+  }
+
+  .message {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.8em;
+  }
+
+  .tagline {
+    font-size: 0.95em;
+  }
+
+  .header-img {
+    width: 120px;
+  }
+
+  .message {
+    width: 70%;
+  }
+}
+
+
+
+
+
+    
